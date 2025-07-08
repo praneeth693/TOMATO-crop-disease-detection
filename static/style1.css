@@ -1,0 +1,452 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    background-color: #f9f9f9;
+    color: #333;
+}
+/* Navbar Styles */
+nav {
+    background-color: #d32f2f; /* Tomato Red background */
+    padding: 10px 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+nav ul li {
+    margin: 0 20px;
+}
+
+nav ul li a {
+    text-decoration: none;
+    color: #fff;  /* White text for contrast */
+    font-size: 18px;
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: all 0.3s ease;
+}
+
+nav ul li a:hover {
+    color: #fff;
+    background-color: #388e3c; /* Green background on hover */
+    padding: 5px 15px;
+    border-radius: 5px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+/* Responsive styling */
+@media (max-width: 768px) {
+    nav ul {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    nav ul li {
+        margin: 10px 0;
+    }
+}
+
+.active{
+    background-color: rgb(99, 245, 99);
+    color: white;
+}
+/* header section */
+.header {
+    text-align: center;
+    background: url(../static/tomo.jpeg);
+    color: white;
+    padding: 2rem 1rem;
+    box-shadow: 0px 0px 10px rgb(240, 94, 94);
+}
+
+.header h1 {
+    font-size: 2.5rem;
+    margin: 0;
+}
+
+/* .header .highlight {
+    color: #ffd700; /* Golden color for highlight */
+
+.header p {
+    font-size: 1.2rem;
+    margin-top: 0.5rem;
+}
+.info{
+    padding: 2rem;
+    max-width: 800px;
+    margin-top: 20px;
+    /* margin: 0 auto; */
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgb(249, 119, 119);
+}
+h2{
+    color: red;
+    text-shadow: 0px 0px 3px rgb(246, 108, 108);
+}
+p{
+    /* font-size: medium; */
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+.uses h2{
+    color: red;
+    text-shadow: 0px 0px 3px rgb(246, 108, 108);
+}
+.uses{
+    padding: 2rem;
+    max-width: 800px;
+    margin-left: 700px;
+    /* margin: 0 auto; */
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgb(249, 119, 119);
+}
+
+
+
+.intro{
+    padding: 2rem;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* margin: 0 auto; */
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgb(249, 119, 119);
+}
+.why-us{
+    padding: 2rem;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: 600px;
+    /* margin: 0 auto; */
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgb(249, 119, 119);
+}
+.how-it-works{
+    padding: 2rem;
+    max-width: 800px;
+    margin-top: 20px;
+    margin-left: 20px;
+    /* margin: 0 auto; */
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0px 0px 20px rgb(249, 119, 119);
+}
+/* content about us section */
+/* .content {
+    padding: 2rem;
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+.content section {
+    margin-bottom: 2rem;
+    background: white;
+    padding: 1.5rem;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.content h2 {
+    color: #4caf50;
+    margin-bottom: 1rem;
+} */
+
+
+/* Footer Styling */
+footer {
+    background-color: #d32f2f; /* Tomato red color */
+    color: white;
+    text-align: center;
+    padding: 10px ;
+    font-size: 14px;
+    position: relative; /* Keep the footer fixed */
+    bottom: 0; /* Fix it at the bottom of the page */
+    width: 100%; /* Full width */
+    z-index: 1000; /* Ensure it stays above other elements */
+}
+
+/* Footer Links */
+footer a {
+    color: #ffffff;
+    text-decoration: none;
+    margin: 0 10px;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
+.card {
+    width: 400px;
+    aspect-ratio: 1 / 0.7;
+    border-radius: 8px;
+    position: relative;
+    cursor: pointer;
+    overflow: hidden;
+}
+
+.card .image-box {
+    width: 100%;
+    height: 100%;
+    border-radius: inherit;
+}
+
+.card .image-box img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: 50% 90%;
+    border-radius: inherit;
+    transition: 0.5s ease-in-out;
+}
+
+.card::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    border: 2px solid white;
+    border-radius: inherit;
+    opacity: 0;
+    transition: 0.4s ease-in-out;
+}
+
+.card .content {
+    width: 80%;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    text-align: center;
+    color: white;
+    opacity: 0;
+    visibility: hidden;
+    transition: opacity 0.4s ease-in-out, visibility 0.4s ease-in-out;
+    z-index: 2;
+}
+
+.card:hover img {
+    filter: grayscale(1) brightness(0.4);
+}
+
+.card:hover::after {
+    opacity: 1;
+    inset: 20px;
+}
+
+.card:hover .content {
+    opacity: 1;
+    visibility: visible;
+}
+
+.why{
+    display: flex;
+    padding: 8px 16px;
+    gap: 80px;
+    justify-content: center;
+}
+h1{
+    text-align: center;
+    letter-spacing: 3px;
+    color: red;
+    text-shadow: 0px 0px 3px rgb(246, 108, 108);
+}
+
+/* Section Styling */
+.predict-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .predict-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 10px;
+    color: red;
+  }
+  
+  .predict-section p {
+    font-size: 1rem;
+    margin-bottom: 30px;
+    color: #7f8c8d;
+  }
+  
+  /* File Upload */
+  .file-upload {
+    margin: 20px auto;
+  }
+  
+  .file-upload input[type="file"] {
+    display: block;
+    margin: 0 auto;
+    padding: 10px;
+    font-size: 1rem;
+    border: 2px solid #bdc3c7;
+    border-radius: 5px;
+    background-color: #ecf0f1;
+    cursor: pointer;
+    transition: border-color 0.3s ease;
+  }
+  
+  .file-upload input[type="file"]:hover {
+    border-color: #3498db;
+  }
+  
+  /* Predict Button */
+  .predict-button {
+    padding: 10px 25px;
+    font-size: 1rem;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .predict-button:hover {
+    background-color: #2980b9;
+  }
+
+  /* Result Section */
+.result-section {
+    text-align: center;
+    padding: 40px 20px;
+  }
+  
+  .result-section h1 {
+    font-size: 2.5rem;
+    margin-bottom: 20px;
+    color: #34495e;
+  }
+  
+  .result-section p {
+    font-size: 1.2rem;
+    margin-bottom: 15px;
+    color: #7f8c8d;
+  }
+  
+  .result-section p strong {
+    color: #34495e;
+  }
+  
+  .result-section a {
+    display: inline-block;
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1rem;
+    color: #fff;
+    background-color: #3498db;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .result-section a:hover {
+    background-color: #2980b9;
+  }
+
+  .container {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    padding: 20px;
+    max-width: 1200px;
+    margin: 0 auto;
+}
+
+/* Image card */
+.image-card {
+    text-align: center;
+    background-color: #ffffff;
+    padding: 15px;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.card-image {
+    width: 100%;
+    height: auto;
+    border-radius: 5px;
+}
+
+/* Name below image */
+.image-name {
+    margin-top: 10px;
+    font-size: 1rem;
+    font-weight: bold;
+    color: #333;
+}
+
+.contact-container {
+    width: 100%;
+    max-width: 800px;
+    margin: 50px auto;
+    background-color: #ffffff;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+
+.contact-container .h1{
+    text-align: center;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Contact form styling */
+.contact-form label {
+    font-size: 1.1rem;
+    margin-bottom: 10px;
+    display: block;
+}
+
+.contact-form input, .contact-form textarea {
+    width: 100%;
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.contact-form textarea {
+    resize: vertical;
+}
+
+.submit-btn {
+    width: 100%;
+    padding: 15px;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    font-size: 1.1rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+.submit-btn:hover {
+    background-color: #45a049;
+}
+

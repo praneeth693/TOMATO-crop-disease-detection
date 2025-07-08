@@ -1,0 +1,66 @@
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Predict Disease</title>
+  <link rel="stylesheet" href="../static/style1.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <ul>
+        <li><a href="/home">Home</a></li>
+        <li><a href="/about">About Us</a></li>
+        <li class="active"><a href="/predict">Predict</a></li>
+        <li><a href="/contact">Contact Us</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section class="predict-section">
+    <h1>Tomato Disease Prediction</h1>
+    <p>Upload an image of your tomato leaf to detect diseases.</p>
+    <form action="/predict" method="post" enctype="multipart/form-data">
+      <div class="file-upload">
+        <input type="file" name="file" accept="image/*" required>
+      </div>
+      <button type="submit" class="predict-button">Predict</button>
+    </form>
+  </section>
+
+  <div class="container">
+    <div class="image-card">
+        <img src="../static/p1.JPG" alt="Image 1" class="card-image">
+        <div class="image-name">Early Blight</div>
+    </div>
+    <div class="image-card">
+        <img src="../static/p2.JPG" alt="Image 2" class="card-image">
+        <div class="image-name">Healthy</div>
+    </div>
+    <div class="image-card">
+        <img src="../static/p3.JPG" alt="Image 3" class="card-image">
+        <div class="image-name">Late Blight</div>
+    </div>
+    <div class="image-card">
+        <img src="../static/p4.JPG" alt="Image 4" class="card-image">
+        <div class="image-name">Leaf Mold</div>
+    </div>
+    <div class="image-card">
+        <img src="../static/p5.JPG" alt="Image 5" class="card-image">
+        <div class="image-name">Septoria leaf spot</div>
+    </div>
+    <div class="image-card">
+        <img src="../static/p6.JPG" alt="Image 6" class="card-image">
+        <div class="image-name">Spider mites</div>
+    </div>
+  </div>
+    
+    <footer>
+        <p>© 2024 Tomato Disease Prediction System. All rights reserved.</p>
+    </footer>
+</div>
+</body>
+</html>
